@@ -3,6 +3,9 @@ class Solution:
         nums.sort()
         valid_3lets = []
         n = len(nums)
+        #edge cases
+        if n<3 : return []
+        
         for i in range(n) :
             # if the current element is greather then 0 break 
             if nums[i] > 0 : break
